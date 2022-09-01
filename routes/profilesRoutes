@@ -2,10 +2,10 @@ const express = require("express");
 const router = express.Router();
 const fs = require("fs")
 
-const images = JSON.parse(fs.readFileSync(`data/images.json`));
+const profiles = JSON.parse(fs.readFileSync(`data/profiles.json`));
 
 router.get("/", (req, res) => {
-    res.json(images)
+    res.json(profiles)
 })
  
 
